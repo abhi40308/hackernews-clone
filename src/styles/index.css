@@ -12,7 +12,7 @@ body {
 .navbar {
   width: 85%;
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 13px;
   background-color: #ff6600;
   color: black;
 }
@@ -21,11 +21,55 @@ body {
   font-weight: 900;
 }
 
+.font-small {
+  font-size: 8px;
+}
+
 .anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.anchor:hover {
   text-decoration: none;
   color: black;
 }
 
 .ml-auto {
   margin-left: auto;
+  margin-right: 0px;
+}
+
+.auth-button {
+  text-decoration: none;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.postlist {
+  width: 85%;
+  font-size: 13px;
+  padding: 1px 1px;
+  background-color: #F6F6EE;
+  color: black;
+}
+
+.post {
+  padding: 3px 3px;
+}
+
+.post-id {
+  color: #848484;
+  font-size: 12px;
+}
+
+.upvote {
+  color: #9A9A9A;
+}
+
+.post-url {
+  text-decoration: none;
+  color: #848484;
+  font-size: 10px;
 }
