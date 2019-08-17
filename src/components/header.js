@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router";
-import { Navbar, Container, Row, Col } from "react-bootstrap";
+import { Navbar, Container, Row } from "react-bootstrap";
 import { useAuth0 } from "../auth/react-auth0-wrapper";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,9 @@ function Header() {
       <Container className="navbar">
         <Navbar>
           <Row>
-            <Col className="fw">Hacker News</Col>
+            <Link className="fw anchor" to="/">
+              &nbsp; Hacker News
+            </Link>
           </Row>
           <Row className="ml-auto">
             {!isAuthenticated && (

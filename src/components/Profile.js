@@ -29,7 +29,7 @@ function Profile(props) {
               <Col>user : {user.name}</Col>
             </Row>
             <Row className="post">
-              <Col>last seen : {Date(user.last_seen).toString()}</Col>
+              <Col>last seen : {new Date(user.last_seen).toString()}</Col>
             </Row>
           </>
         ))}

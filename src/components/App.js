@@ -19,8 +19,6 @@ import { setContext } from "apollo-link-context";
 
 function App() {
 
-  const { isAuthenticated, user } = useAuth0();
-
   // used state to get accessToken through getTokenSilently(), the component re-renders when state changes, thus we have
   // our accessToken in apollo client instance.
   const [accessToken, setAccessToken] = useState("");
@@ -49,7 +47,6 @@ function App() {
 
   const authLink = setContext((_, { headers }) => {
     const token = accessToken;
-    console.log("token inside authlink is : ", token);
     if (token) {
       return {
         headers: {

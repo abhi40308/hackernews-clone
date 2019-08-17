@@ -5,6 +5,7 @@ import { useMutation } from "@apollo/react-hooks";
 import { gql } from "apollo-boost";
 import { useAuth0 } from "../auth/react-auth0-wrapper";
 import { withApollo } from "@apollo/react-hoc";
+import {POSTS_LIST} from "./PostList";
 
 const SUBMIT_POST = gql`
   mutation ($description: String!, $url: String!, $userId: String!) {
@@ -29,7 +30,10 @@ function NewPost() {
       <form
         onSubmit={e => {
           e.preventDefault();
-          submitPost({ variables: { description, url, userId: user.sub } })
+          submitPost({ 
+            variables: { description, url, userId: user.sub },
+            refetchQueries: [{query: POSTS_LIST}]
+           })
           .catch(function(error) {
             console.log(error);
             setError(error.toString());
