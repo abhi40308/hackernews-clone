@@ -1,4 +1,4 @@
-### HackerNews Clone using React, Apollo-React-Client and Hasura GraphQl Engine
+# HackerNews Clone using React, Apollo-React-Client and Hasura GraphQl Engine
 
 This application demonstrates consuming GraphQl Api provided by [Hasura GraphQL Engine](https://hasura.io) using a react app. Uses react-apollo GraphQL client to make requests to the api. Users can create account using [Auth0 JWT authentication](https://auth0.com/) which is then verified by Hasura. React-router is used to provide SPA experience.
 
