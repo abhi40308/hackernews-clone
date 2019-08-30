@@ -1,6 +1,6 @@
 {
   "domain": "dev-z5h3dp-b.auth0.com",
   "clientId": "Yqqr7YtTcH5Fulpmqzl8uF4xnOop7UZK",
-  "redirect_uri": "http://localhost:3000",
+  "redirect_uri": "https://hackernews-1919.herokuapp.com",
   "audience": "hackernews-clone"
 }
