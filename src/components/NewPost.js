@@ -47,7 +47,7 @@ function NewPost() {
       >
         <Row>
           <Col>
-            <span className="post-id">Description:</span>
+            <span className="post-id">Post Title:</span>
           </Col>
         </Row>
         <Row>
@@ -61,7 +61,7 @@ function NewPost() {
         </Row>
         <Row>
           <Col>
-            <span className="post-id">Url:</span>
+            <span className="post-id">Url (Enter a valid url, doesn't check for validity currently):</span>
           </Col>
         </Row>
         <Row>
